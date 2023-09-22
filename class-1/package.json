@@ -1,0 +1,33 @@
+{
+  "author": "Samuel Antonio Rivera Medina",
+  "bugs": {
+    "url": "https://github.com/Samuel-RM/nodejs-course/issues"
+  },
+  "dependencies": {
+    "picocolors": "^1.0.0"
+  },
+  "description": "\"# nodejs-course\"",
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "homepage": "https://github.com/Samuel-RM/nodejs-course#readme",
+  "keywords": [
+    "course",
+    "node",
+    "nodejs"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "nodejs-course",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samuel-RM/nodejs-course.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
