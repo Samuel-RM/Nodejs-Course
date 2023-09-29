@@ -19,8 +19,26 @@ const processRequet = (req, res) => {
       }
     case 'POST':
       switch (url) {
-        case '/pokemon':
-          const body = ''
+        case '/pokemon': {
+          let body = ''
+
+          req.on('data', chunk => {
+            body += chunk.toString()
+            // console.log(chunk)
+          })
+
+          req.on('end', () => {
+            const data = JSON.parse(body)
+            data.timestamp = Date.now()
+            res.writeHead(201, { ContentType: 'aplication/json; charset=utf-8' })
+            res.end(JSON.stringify(data))
+          })
+        }
+
+        // default:
+        //   res.statusCode = 404
+        //   res.setHeader('Conten-Type', 'text/plain; charset=utf-8')
+        //   return res.end('<h1>404</h1>')
       }
   }
 }
