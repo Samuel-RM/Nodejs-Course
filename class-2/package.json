@@ -13,7 +13,7 @@
   "scripts": {
     "dev:1": "nodemon 1.http.js",
     "dev:2": "nodemon 2.routing.js",
-    "dev:3": "nodemon --watch 3.express.js",
+    "dev:3": "node --watch 3.express.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "version": "1.0.0"

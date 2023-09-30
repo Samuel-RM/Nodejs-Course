@@ -1,8 +1,8 @@
 ### GET information of the pokemon 'Ditto'
-GET http://localhost:1234/pokemon/ditto
+GET http://localhost:1234/
 
 ### For create a new pokemon
-POST  http://localhost:1234/pokemon
+POST http://localhost:1234/pokemon2
 Content-Type: application/json
 
 {
