@@ -7,3 +7,23 @@ GET http://localhost:1234/movies/1
 
 ### Recuperar todas las peliculas por un genero
 GET  http://localhost:1234/movies?genre=Terror
+
+### Creating a Movie whit POST method
+POST http://localhost:1234/movies
+Content-Type: application/json
+{
+    "title": "Interstellar",
+    "year": 2014,
+    "director": "Christopher Nolan",
+    "duration": 169,
+    "poster": "https://m.media-amazon.com/images/I/91obuWzA3XL._AC_UF1000,1000_QL80_.jpg",
+    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "rate": 8.6
+  }
+
+### Update a Movie
+PATCH http://localhost:1234/movies
+Content-Type:  application/json
+{
+    "year":1990
+}
