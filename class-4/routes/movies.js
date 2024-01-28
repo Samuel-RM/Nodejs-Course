@@ -4,6 +4,8 @@ import { MovieControler } from '../controllers/movies.js'
 
 export const moviesRouter = Router()
 
+
+
 moviesRouter.get('/', MovieControler.getAll)
 
 moviesRouter.get('/:id', MovieControler.getById)
